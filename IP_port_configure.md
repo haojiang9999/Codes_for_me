@@ -30,6 +30,11 @@ Connection to 192.168.42.128 1521 port [tcp/ncube-lm] succeeded!
 [root@DB-Server ~]#  nc -vv 192.168.42.128 1433
 nc: connect to 192.168.42.128 port 1433 (tcp) failed: No route to host
 ```
+wget检测端口
+```
+[root@DB-Server ~]# wget 192.168.42.128:1433
+
+```
 #####端口命令
 
 1.开放端口命令：
@@ -40,6 +45,7 @@ iptables -I INPUT -p tcp --dport 8080 -j ACCEPT
 2.查看端口是否开放：
 ```
 iptables -L -n
+netstat -an | grep 8881
 ```
 3：lsof 工具检测开放端口
 有没有开放状态不一样
