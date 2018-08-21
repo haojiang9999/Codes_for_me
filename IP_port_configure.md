@@ -41,6 +41,19 @@ iptables -I INPUT -p tcp --dport 8080 -j ACCEPT
 ```
 iptables -L -n
 ```
+3：lsof 工具检测开放端口
+有没有开放状态不一样
+```
+[root@DB-Server Server]# service mysql start
+Starting MySQL......[  OK  ]
+[root@DB-Server Server]# lsof -i:3306
+COMMAND  PID  USER   FD   TYPE DEVICE SIZE NODE NAME
+mysqld  7860 mysql   15u  IPv6  44714       TCP *:mysql (LISTEN)
+[root@DB-Server Server]# service mysql stop
+Shutting down MySQL..[  OK  ]
+[root@DB-Server Server]# lsof -i:3306
+[root@DB-Server Server]#
+```
 3.保存：
 
 ```
@@ -48,4 +61,8 @@ iptables -L -n
 ```
 3.重启服务：/etc/init.d/iptables restart
 
-      4.查看端口是否开放：/sbin/iptables -L -n
+4.查看端口是否开放：/sbin/iptables -L -n
+
+####想要外部电脑连接还需要对路由器进行端口投射
+路由器 端口转发
+https://www.192ly.com/qiu-zhu/r-dkys.html
