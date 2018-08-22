@@ -1,3 +1,7 @@
+####打开端口这个配置外网连接好用
+```
+sudo iptables -A INPUT -m state --state NEW -m tcp -p tcp --dport 8787 -j ACCEPT
+```
 ####nmap工具检测开放端口
 https://www.cnblogs.com/kerrycode/p/5609010.html
 
