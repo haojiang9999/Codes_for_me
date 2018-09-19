@@ -16,6 +16,6 @@ wget -r -A.pdf url
 
 修改下
 ```
-wget -A .gz -np -r http://fantom.gsc.riken.jp/5/suppl/Hon_et_al_2016/data/assembly/lv3_robust/
+wget -A .gz -np -r -nd http://fantom.gsc.riken.jp/5/suppl/Hon_et_al_2016/data/assembly/lv3_robust/
 ```
-这样就行了，不过是下载在了每一级文件夹里！！
+这样就行了~
