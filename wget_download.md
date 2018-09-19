@@ -12,4 +12,10 @@ https://www.cnblogs.com/semonxv/p/3816366.html
 ```
 wget -r -A.pdf url 
 ```
-这个命令会把一级级文件夹下下来！！
+这个命令会把该网站所有类型文件下载下来所以不能用！！！
+
+修改下
+```
+wget -A .gz -np -r http://fantom.gsc.riken.jp/5/suppl/Hon_et_al_2016/data/assembly/lv3_robust/
+```
+这样就行了，不过是下载在了每一级文件夹里！！
