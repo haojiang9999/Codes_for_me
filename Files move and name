@@ -2,3 +2,7 @@
 很简单：
 　　find /path/to/search/ -type f -name the_file_you_want_to_find | xargs cp -t the_target_path_that_you_would_like_to_put_files_into
        参考：http://www.linuxidc.com/Linux/2015-08/122061.htm
+       
+#select the file names
+
+ls *.gz|cut -d '_' -f 1|uniq > samplename
