@@ -21,6 +21,7 @@ In my case, it sufficed with killing rserver:
 3.Kill all those processes: $ sudo kill -9 [pid]
 
 4.Start RStudio server: $ sudo rstudio-server start
+
 HIH
 
 https://support.rstudio.com/hc/en-us/community/posts/201681013-Rstudio-V0-98-1028-spawning-port-error
