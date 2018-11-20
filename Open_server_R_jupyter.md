@@ -12,6 +12,7 @@ sudo rm -rf /var/lib/rstudio-server
 sudo rm -rf /etc/rstudio
 ```
 https://community.rstudio.com/t/cant-start-rstudio-server-ubuntu-18-0-4-bionic/11835/7
+#### After update
 In my case, it sufficed with killing rserver:
 
 1.Stop RStudio server: $ sudo rstudio-server stop
@@ -21,6 +22,8 @@ In my case, it sufficed with killing rserver:
 3.Kill all those processes: $ sudo kill -9 [pid]
 
 4.Start RStudio server: $ sudo rstudio-server start
+
+5.sudo rstudio-server online
 
 HIH
 
