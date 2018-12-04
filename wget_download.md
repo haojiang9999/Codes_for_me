@@ -19,3 +19,15 @@ wget -r -A.pdf url
 wget -A .gz -np -r -nd http://fantom.gsc.riken.jp/5/suppl/Hon_et_al_2016/data/assembly/lv3_robust/
 ```
 这样就行了~
+#### 使用wget -i下载多个文件 
+首先，保存一份下载链接文件 
+
+cat > filelist.txt 
+url1 
+url2 
+url3 
+url4 
+接着使用这个文件和参数-i下载 
+```
+wget -i filelist.txt 
+```
