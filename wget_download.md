@@ -31,3 +31,8 @@ url4
 ```
 wget -i filelist.txt 
 ```
+#### 检查文件并继续
+https://unix.stackexchange.com/questions/165875/resume-failed-download-using-linux-command-line-tool
+```
+wget -nc http://example.com/pic.png
+```
