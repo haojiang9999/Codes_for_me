@@ -18,3 +18,12 @@ done <$1 #我的是这个样子的
 :set invlist #即可以将不可见的字符显示出来
 :set nolist #可以回到正常的模式。
 ```
+3.字符串截取命令
+https://www.cnblogs.com/fetty/p/4857158.html
+```
+# 号截取，删除左边字符，保留右边字符。
+echo ${var#*//}
+其中 var 是变量名，# 号是运算符，*// 表示从左边开始删除第一个 // 号及左边的所有字符
+即删除 http://
+结果是 ：www.google.com/test.htm
+```
