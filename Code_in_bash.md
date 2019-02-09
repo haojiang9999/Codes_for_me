@@ -27,3 +27,11 @@ echo ${var#*//}
 即删除 http://
 结果是 ：www.google.com/test.htm
 ```
+4.kill命令如何一次杀死多个进程
+https://segmentfault.com/q/1010000007245878?_ea=1283719
+```
+ps aux|grep php|grep -v grep|awk '{print $2}'|xargs kill -9
+#如果进程中有斜杠的话可以转义
+
+ps aux|grep task\/crond|grep -v grep|awk '{print $2}'|xargs kill -9
+```
