@@ -35,6 +35,8 @@ wget -i filelist.txt
 https://unix.stackexchange.com/questions/165875/resume-failed-download-using-linux-command-line-tool
 ```
 wget -nc http://example.com/pic.png
+#检查文件列表
+wget -nc -i GSE103154.sra.list
 ```
 #### 查看文件夹占用空间大小
 https://www.cnblogs.com/justforcon/archive/2017/12/02/7954481.html
