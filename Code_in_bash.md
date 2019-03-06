@@ -35,3 +35,8 @@ ps aux|grep php|grep -v grep|awk '{print $2}'|xargs kill -9
 
 ps aux|grep task\/crond|grep -v grep|awk '{print $2}'|xargs kill -9
 ```
+5. find 的使用方法
+https://www.cnblogs.com/archoncap/p/6144369.html
+```
+find ./ -name *.gz |xargs ls|wc -l
+```
