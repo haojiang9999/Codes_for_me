@@ -3,7 +3,8 @@ https://blog.csdn.net/wengyupeng/article/details/69791404
 ```
 #Copy文件夹之后，检测两个文件夹（dir1，dir2）下文件是否相同。logdir 是任何一个存放生成文件的目录
 cd dir1
-find ./ -type f -exec md5sum {} \; | sort -k 2  > logdir/dir1.txt
+find ./ -type f -print0 | xargs -0 md5sum > ./stor.md5
+#find ./ -type f -exec md5sum {} \; | sort -k 2  > logdir/dir1.txt
 cd dir2
 find ./ -type f -exec md5sum {} \; | sort -k 2  > logdir/dir2.txt
 cd logdir
