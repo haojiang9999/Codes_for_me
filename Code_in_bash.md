@@ -40,3 +40,9 @@ https://www.cnblogs.com/archoncap/p/6144369.html
 ```
 find ./ -name *.gz |xargs ls|wc -l
 ```
+6. 列出特定大小文件
+https://stackoverflow.com/questions/13282786/list-files-over-a-specific-size-in-current-directory-and-all-subdirectories
+```
+#找到大于0k 的文件
+find . -size +0k -name '*separate.sh.log'|xargs ls -lh|wc -l 
+```
