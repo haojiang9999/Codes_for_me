@@ -16,7 +16,7 @@ awk '$1 == "CT"'    file    # 字符注意必须带双引号
 awk '$1 * $2 >100 '   file  
 awk '$2 >5 && $2<=15'  file
 ```
-####统计文本行数的方法
+#### 统计文本行数的方法
 https://www.cnblogs.com/mikasama/p/8032389.html
 ```
 awk 'END{print NR}' test1.txt
