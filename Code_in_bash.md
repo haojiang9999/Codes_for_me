@@ -46,3 +46,8 @@ https://stackoverflow.com/questions/13282786/list-files-over-a-specific-size-in-
 #找到大于0k 的文件
 find . -size +0k -name '*separate.sh.log'|xargs ls -lh|wc -l 
 ```
+7.scp 考本本机带进度条
+http://www.veryhuo.com/a/view/18239.html
+```
+scp -vr /mnt/yidong2/full20100526.tar.gz root@127.0.0.1:/mnt/yidong1/ 
+```
