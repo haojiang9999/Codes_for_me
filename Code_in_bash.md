@@ -51,3 +51,14 @@ http://www.veryhuo.com/a/view/18239.html
 ```
 scp -vr /mnt/yidong2/full20100526.tar.gz root@127.0.0.1:/mnt/yidong1/ 
 ```
+8.查看系统配置
+https://www.cnblogs.com/alwu007/p/6024631.html
+```
+#lscpu：显示cpu架构信息
+[xxx@localhost ~]$ lscpu
+#cat /proc/cpuinfo：查看CPU详细信息
+[xxx@localhost ~]$ cat /proc/cpuinfo 
+#内存
+free -h
+```
+
