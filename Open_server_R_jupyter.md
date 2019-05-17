@@ -28,3 +28,8 @@ In my case, it sufficed with killing rserver:
 HIH
 
 https://support.rstudio.com/hc/en-us/community/posts/201681013-Rstudio-V0-98-1028-spawning-port-error
+#### start Rstudio in conda env
+https://stackoverflow.com/questions/52381661/how-can-i-use-anaconda-environments-with-rstudio-server
+```
+/usr/lib/rstudio-server/bin/rserver    --server-daemonize=0    --www-port 8788    --rsession-which-r=/home/jianghao/anaconda3/envs/R3.5.1/bin/R    --rsession-ld-library-path=$CONDA_PREFIX/lib
+```
