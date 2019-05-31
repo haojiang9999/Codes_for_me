@@ -1,3 +1,5 @@
+
+
 #### Installing an older version of R in a conda environment
 http://salvatoregiorgi.com/blog/2018/10/16/installing-an-older-version-of-r-in-a-conda-environment/
 ```
@@ -42,4 +44,11 @@ Next, the Native R kernel for Jupyter is installed with:
 
 > conda install -c r r-irkernel
 
+```
+#### add coda-foge to conda
+https://conda-forge.org/#about
+```
+conda config --add channels conda-forge 
+conda config --set channel_priority strict 
+conda install <package-name>
 ```
