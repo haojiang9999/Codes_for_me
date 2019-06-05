@@ -21,4 +21,11 @@ https://www.cnblogs.com/mikasama/p/8032389.html
 ```
 awk 'END{print NR}' test1.txt
 ```
+#### 只输出文本第一列
+https://www.unix.com/unix-for-dummies-questions-and-answers/122496-select-first-column-file.html
+```
+cut -f 1 < output > otherfile
+awk '{ print $1 }' output > otherfile
+```
+
 
