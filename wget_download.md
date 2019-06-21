@@ -37,6 +37,8 @@ https://unix.stackexchange.com/questions/165875/resume-failed-download-using-lin
 wget -nc http://example.com/pic.png
 #检查文件列表
 wget -nc -i GSE103154.sra.list
+#感觉是不是不加n更好? 直接c
+wget -c -i GSE103154.sra.list
 ```
 #### 查看文件夹占用空间大小
 https://www.cnblogs.com/justforcon/archive/2017/12/02/7954481.html
