@@ -27,5 +27,10 @@ https://www.unix.com/unix-for-dummies-questions-and-answers/122496-select-first-
 cut -f 1 < output > otherfile
 awk '{ print $1 }' output > otherfile
 ```
-
+#### Linux：cut命令详解
+https://www.cnblogs.com/Spiro-K/p/6361646.html
+```
+#使用 -d 选项指定字段分隔符：
+cut -f2 -d";" test2.txt
+```
 
