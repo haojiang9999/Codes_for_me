@@ -4,6 +4,8 @@ screen -S NAME
 #### 指定jupyter note开启位置
 ```
 jupyter notebook --no-browser --port 8881 --ip=192.168.1.103
+#后台提交
+nohup jupyter notebook --no-browser --port 8882 --ip=000.000.0.000 &
 ```
 
 #### Rstudio server can not start !!
@@ -36,7 +38,7 @@ https://stackoverflow.com/questions/52381661/how-can-i-use-anaconda-environments
 #### add R to jupyter notebook 
 https://github.com/IRkernel/IRkernel
 ```
-install.packages('IRkernel')
+install.packages('IRkernel',repos='https://mirrors.tuna.tsinghua.edu.cn/CRAN/')
 IRkernel::installspec()  # to register the kernel in the current R installation
 # in R 3.3
 IRkernel::installspec(name = 'ir33', displayname = 'R 3.3')
