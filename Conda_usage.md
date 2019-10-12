@@ -44,6 +44,10 @@ Next, the Native R kernel for Jupyter is installed with:
 
 > conda install -c r r-irkernel
 
+> conda uninstall r-base
+uninstall r-essentials using conda?
+which R
+
 ```
 #### add coda-foge to conda
 https://conda-forge.org/#about
