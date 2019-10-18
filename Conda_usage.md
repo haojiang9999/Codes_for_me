@@ -56,3 +56,7 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict 
 conda install <package-name>
 ```
+#### Install requered package by conda
+```
+conda install -n OpenNE --file requirements.txt
+```
