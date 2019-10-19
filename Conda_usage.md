@@ -1,5 +1,9 @@
 
-
+####  Before activating an environment it might be good to do a
+https://stackoverflow.com/questions/17386880/does-anaconda-create-a-separate-pythonpath-variable-for-each-new-environment
+```
+unset PYTHONPATH
+```
 #### Installing an older version of R in a conda environment
 http://salvatoregiorgi.com/blog/2018/10/16/installing-an-older-version-of-r-in-a-conda-environment/
 ```
