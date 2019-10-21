@@ -45,3 +45,14 @@ IRkernel::installspec(name = 'ir33', displayname = 'R 3.3')
 # in R 3.2
 IRkernel::installspec(name = 'ir32', displayname = 'R 3.2')
 ```
+#### Add conda environment to jupyter lab
+How to add conda environment to jupyter lab
+
+https://stackoverflow.com/questions/53004311/how-to-add-conda-environment-to-jupyter-lab
+```
+$ conda activate cenv
+(cenv)$ conda install ipykernel
+(cenv)$ ipython kernel install --user --name=<any_name_for_kernel>
+(cenv($ conda deactivate
+```
+If you restart your jupyter notebook/lab you will be able to see the new kernel available.
