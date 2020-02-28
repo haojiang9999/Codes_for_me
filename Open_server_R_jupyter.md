@@ -56,3 +56,8 @@ $ conda activate cenv
 (cenv($ conda deactivate
 ```
 If you restart your jupyter notebook/lab you will be able to see the new kernel available.
+#### Jupyter lab 
+```
+cd /home/jianghao/jupyter_nb
+jupyter lab
+```
